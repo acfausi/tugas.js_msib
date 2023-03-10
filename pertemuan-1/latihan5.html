@@ -1,0 +1,29 @@
+<script>
+
+    let pelanggan ="fausi";
+    let produk ="Tv";
+
+
+    if (produk == 'Tv'){
+        harsat = 30000;
+
+    }
+    else if (produk == 'Motor'){
+        harsat = 120000;
+    }
+    else if (produk == 'Kulkas'){
+        harsat = 80000;
+    }
+    else{
+        harsat = 0;
+    }
+    let jmlBeli = 13;
+    let bruto = harsat * jmlBeli;
+
+    let diskon = (produk == 'Motor') ? 0.1 * bruto : 0;
+    let harga_diskon = bruto - diskon;
+
+    document.write("Data Pelanggan :" + pelanggan + "<br> Produk yang Beli :" + produk + "<br> Harga Satuan :" + harsat + "<br> Jumlah Braang yang dibeli :" + jmlBeli + "<br> Total harga yang dibeli :" + bruto + "<br> Hasil Diskon " + harga_diskon)
+
+
+</script>

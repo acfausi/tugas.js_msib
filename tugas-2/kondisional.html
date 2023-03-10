@@ -1,0 +1,32 @@
+<script>
+    //deklarasi variable
+    var pegawai = "Ach Fausi";
+    var jabatan = "manager";
+    var status = "Menikah";
+    var jml_gaji = "";
+    var t_keluarga = "";
+
+
+    switch(jabatan){
+        case 'manager': jml_gaji =10000000;break;
+        case 'Asisten manager': jml_gaji=8000000;break;
+        case 'Staff': jml_gaji=5000000;break;
+        default:jml_gaji=0;
+    }
+
+    if(status == "Menikah") t_keluarga = 0.1 * jml_gaji;
+    else t_keluarga = 0;
+
+    var t_jabatan = 0.1 * jml_gaji;
+    var bpjs = 0.1 * jml_gaji;
+    let total_gaji = jml_gaji + t_jabatan + bpjs + t_keluarga;
+   
+    document.write(" Data Pegawai <hr/>" +
+   "Nama Pegawai :" + pegawai +
+   "<br/> Jabatan :" + jabatan +
+   "<br/> Status :" + status +
+   "<br/> Jumlah Gaji :" + total_gaji
+   );
+
+
+</script>
