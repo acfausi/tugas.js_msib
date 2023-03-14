@@ -1,0 +1,37 @@
+<script>
+    // array of Object
+    // atau array didalam array
+
+    let p1 ={nama: "Fausi", nilai:80};
+    let p2 ={nama: "Ayu", nilai:81};
+    let p3 ={nama: "santi", nilai:83};
+    let p4 ={nama: "Bima", nilai:84};
+    let p5 ={nama: "sarip", nilai:85};
+    let person=[p1,p2,p3,p4,p5];
+</script>
+<h3>
+    <table style="padding: 10; text-align: center; width: 100%;">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamaat</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                var no =1;
+                for (p of person){
+                    let ket =(p.nilai >= 60)? "Lulus" : "Gagal";
+                    document.write(`<tr bgcolor="">
+                    <td>${no++}</td>
+                    <td> ${p.nama}</td>
+                    <td> ${p.nilai}</td>
+                    <td> ${ket}</td>
+                </tr>`);
+                }
+            </script>
+        </tbody>
+    </table>
+</h3>
