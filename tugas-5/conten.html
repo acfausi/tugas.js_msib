@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan panggilan jquery</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#gambar1").click(function () {
+                $(this).hide(400);
+            });
+            $("#gambar2").click(function () {
+                $('#gambar2').hide(400);
+            });
+            $("#gambar3").click(function () {
+                $(this).hide(800);
+            });
+
+        });
+    </script>
+    <img id="gambar1" src="cloud.jpg" width="330">
+    <img id="gambar2" src="android.png" width="330">
+    <img id="gambar3" src="website.jpg" width="330">
+
+</body>
+</html>
